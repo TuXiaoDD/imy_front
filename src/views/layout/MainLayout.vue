@@ -63,17 +63,17 @@
               </router-link>
             </el-tooltip>
 
-            <el-tooltip
-              content="Gitub 源码"
-              placement="right"
-              :visible-arrow="false"
-            >
-              <a target="_blank" href="https://github.com/gzydong/LumenIM">
-                <div class="menu-items">
-                  <i class="iconfont icon-github" />
-                </div>
-              </a>
-            </el-tooltip>
+<!--            <el-tooltip-->
+<!--              content="Gitub 源码"-->
+<!--              placement="right"-->
+<!--              :visible-arrow="false"-->
+<!--            >-->
+<!--              <a target="_blank" href="https://github.com/gzydong/LumenIM">-->
+<!--                <div class="menu-items">-->
+<!--                  <i class="iconfont icon-github" />-->
+<!--                </div>-->
+<!--              </a>-->
+<!--            </el-tooltip>-->
           </el-main>
           <el-footer height="60px" class="fixed-sidebar">
             <div class="menu-items" @click="logout">
