@@ -1,30 +1,4 @@
-<template>
-  <div>
-    <div class="reward" v-show="isShow">
-      <div class="title">
-        <span>Donate</span>
-        <i class="el-icon-circle-close" @click="close" />
-      </div>
-      <div class="main">
-        <div class="pay-box">
-          <img
-            src="https://cdn.learnku.com/uploads/images/202101/30/46424/PPYHOUhCb4.jpg"
-          />
-          <p>支付宝</p>
-        </div>
-        <div class="pay-box">
-          <img
-            src="https://cdn.learnku.com/uploads/images/202101/30/46424/XLmCJjbvlQ.png"
-          />
-          <p>微信</p>
-        </div>
-      </div>
-      <div class="footer">
-        开源不易，如果你觉得项目对你有帮助，可以请作者喝杯咖啡☕️！鼓励下...
-      </div>
-    </div>
-  </div>
-</template>
+<!---->
 <script>
 export default {
   data() {
