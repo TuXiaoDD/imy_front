@@ -1,12 +1,12 @@
 <template>
   <div>
     <div class="abs-module" v-show="isShow">
-      <div class="abs-box">
-        <i class="el-icon-circle-close" @click="close" />
-        <a href="https://www.aliyun.com/minisite/goods?userCode=kqyyppx2" target="_blank">
-          <img src="~@/assets/image/aliyun-abs.jpg" width="300" />
-        </a>
-      </div>
+<!--      <div class="abs-box">-->
+<!--        <i class="el-icon-circle-close" @click="close" />-->
+<!--        <a href="https://www.aliyun.com/minisite/goods?userCode=kqyyppx2" target="_blank">-->
+<!--          <img src="~@/assets/image/aliyun-abs.jpg" width="300" />-->
+<!--        </a>-->
+<!--      </div>-->
     </div>
   </div>
 </template>

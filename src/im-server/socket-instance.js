@@ -35,7 +35,7 @@ class SocketInstance {
             window.location.reload()
         }
 
-        return `${config.BASE_WS_URL}?token=` + getToken()
+        return `${config.BASE_WS_URL}/` + getToken()
       },
       {
         onError: evt => {

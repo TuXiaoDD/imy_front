@@ -1,45 +1,5 @@
 <template>
   <div>
-    <div class="container">
-      <h4>帐户绑定</h4>
-      <el-row type="flex" class="list-item">
-        <el-col :span="20" class="left-col">
-          <div class="avatar">
-            <img
-              src="~@/assets/image/github-avatar.jpg"
-              width="50"
-              height="50"
-            />
-          </div>
-          <div class="conent">
-            <h4>绑定 github</h4>
-            <p>当前未绑定github账号</p>
-          </div>
-        </el-col>
-        <el-col :span="4" class="right-col">
-          <span class="action">立即绑定</span>
-        </el-col>
-      </el-row>
-
-      <el-row type="flex" class="list-item">
-        <el-col :span="20" class="left-col">
-          <div class="avatar">
-            <img
-              src="~@/assets/image/gitee-avatar.jpg"
-              width="50"
-              height="50"
-            />
-          </div>
-          <div class="conent">
-            <h4>绑定 gitee</h4>
-            <p>当前未绑定gitee账号</p>
-          </div>
-        </el-col>
-        <el-col :span="4" class="right-col">
-          <span class="action">立即绑定</span>
-        </el-col>
-      </el-row>
-    </div>
   </div>
 </template>
 <script>
