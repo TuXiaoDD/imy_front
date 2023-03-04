@@ -100,6 +100,7 @@ import { ServeSendVerifyCode } from '@/api/common'
 import { ServeRegister } from '@/api/auth'
 import { isMobile } from '@/utils/validate'
 import SmsLock from '@/plugins/sms-lock'
+import md5 from "js-md5";
 
 export default {
   data() {
@@ -202,7 +203,7 @@ export default {
       ServeRegister({
         nickname: this.form.nickname,
         mobile: this.form.username,
-        password: this.form.password,
+        password: md5("yym" + this.form.password),
         sms_code: this.form.sms_code,
         platform: 'web',
       })
@@ -221,7 +222,7 @@ export default {
           } else {
             this.$notify.info({
               title: '提示',
-              message: res.message,
+              message: res.msg,
             })
           }
         })
@@ -272,7 +273,7 @@ export default {
           } else {
             this.$notify({
               title: '提示',
-              message: res.message,
+              message: res.msg,
               customClass: 'cus-notifyclass',
             })
           }

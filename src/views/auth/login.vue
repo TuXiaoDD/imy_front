@@ -64,6 +64,7 @@
 <script>
 import { setToken } from '@/utils/auth'
 import { ServeLogin } from '@/api/auth'
+import md5 from 'js-md5'
 
 export default {
   data() {
@@ -105,7 +106,7 @@ export default {
     login() {
       ServeLogin({
         mobile: this.form.username,
-        password: this.form.password,
+        password: md5("yym" + this.form.password),
         platform: 'web',
       })
         .then(res => {
@@ -128,7 +129,7 @@ export default {
           } else {
             this.$notify.info({
               title: '提示',
-              message: '登录密码不正确或账号不存在...',
+              message: res.msg,
             })
           }
         })

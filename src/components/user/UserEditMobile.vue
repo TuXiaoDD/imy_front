@@ -163,7 +163,7 @@ export default {
           if (res.code !== 200) {
             this.$notify({
               title: '提示',
-              message: res.message,
+              message: res.msg,
             })
             return
           }
