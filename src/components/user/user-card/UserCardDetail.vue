@@ -194,7 +194,7 @@ export default {
     // 获取用户信息
     loadUserDetail() {
       ServeSearchUser({
-        user_id: this.user_id,
+        friendUid: this.uid,
       }).then(res => {
         if (res.code == 200) {
           this.detail.user_id = res.data.id

@@ -97,7 +97,7 @@ class SocketInstance {
     this.socket.on('event_error', data => {
       Notification({
         title: '友情提示',
-        message: data.message,
+        message: data.msg,
         type: 'warning',
       })
     })

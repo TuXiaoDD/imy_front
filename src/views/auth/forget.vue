@@ -198,7 +198,7 @@ export default {
             }, 1500)
           } else {
             this.$notify({
-              message: res.message,
+              message: res.msg,
             })
           }
         })

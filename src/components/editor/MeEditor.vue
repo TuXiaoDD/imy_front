@@ -323,7 +323,7 @@ export default {
         } else {
           this.$notify({
             title: '友情提示',
-            message: res.message,
+            message: res.msg,
             type: 'warning',
           })
         }
@@ -349,7 +349,7 @@ export default {
           } else {
             this.$notify({
               title: '友情提示',
-              message: res.message,
+              message: res.msg,
               type: 'warning',
             })
           }

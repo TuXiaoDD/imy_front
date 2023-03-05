@@ -8,7 +8,7 @@
         <template v-if="status == 0">
           <Loading />
         </template>
-        <template v-else-if="status == 1 && items.length == 0">
+        <template v-else-if="status == 1 && (items.length == 0)">
           <Empty text="暂无联系人申请" />
         </template>
 
@@ -25,7 +25,7 @@
               :src="item.avatar"
               :size="35"
             >
-              {{ item.nickname.substr(0, 1) }}
+              {{ item.nickname }}
             </el-avatar>
             <div class="card">
               <div class="title">
@@ -91,12 +91,12 @@ export default {
     // 查看好友申请列表
     loadFriendApply() {
       ServeGetContactApplyRecords({
-        page: 1,
-        page_size: 10000,
+        pageIndex: 1,
+        pageSize: 100,
       }).then(res => {
         if (res.code == 200) {
           this.status = 1
-          this.items = res.data.rows
+          this.items = res.data
         }
       })
     },
