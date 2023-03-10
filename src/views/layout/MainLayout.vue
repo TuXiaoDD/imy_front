@@ -5,7 +5,7 @@
         <el-container class="full-height">
           <el-header height="100px" class="logo-header">
             <div class="userlogo" v-popover:usercard>
-              <img :src="userAvatar" :onerror="detaultAvatar" />
+              <img :src="userAvatar" :onerror="defaultAvatar" />
             </div>
             <p class="user-status">
               <span v-if="socketStatus" class="online">在线</span>
@@ -134,7 +134,7 @@ export default {
   computed: {
     ...mapState({
       userAvatar: state => state.user.avatar,
-      detaultAvatar: state => state.detaultAvatar,
+      defaultAvatar: state => state.defaultAvatar,
       socketStatus: state => state.socketStatus,
       applyNum: state => state.notify.applyNum,
       notifyCueTone: state => state.settings.notifyCueTone,

@@ -8,7 +8,7 @@
         <template v-if="status == 0">
           <Loading />
         </template>
-        <template v-else-if="status == 1 && (items.length == 0)">
+        <template v-else-if="status == 1 && items.length == 0">
           <Empty text="暂无联系人申请" />
         </template>
 
@@ -90,10 +90,7 @@ export default {
   methods: {
     // 查看好友申请列表
     loadFriendApply() {
-      ServeGetContactApplyRecords({
-        pageIndex: 1,
-        pageSize: 100,
-      }).then(res => {
+      ServeGetContactApplyRecords().then(res => {
         if (res.code == 200) {
           this.status = 1
           this.items = res.data

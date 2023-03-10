@@ -141,7 +141,7 @@
                 <img
                   width="20px"
                   :src="member.avatar"
-                  :onerror="$store.state.detaultAvatar"
+                  :onerror="$store.state.defaultAvatar"
                 />
                 <span class="nickname">{{ member.nickname }}</span>
               </el-col>

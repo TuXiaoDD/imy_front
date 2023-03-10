@@ -41,7 +41,7 @@
                         :size="25"
                         :src="item.avatar"
                       >
-                        <img src="~@/assets/image/detault-avatar.jpg" />
+                        <img src="~@/assets/image/default-avatar.jpg" />
                       </el-avatar>
                       <span class="nickname">
                         [{{ item.type == 1 ? '友' : '群' }}] {{ item.nickname }}
@@ -77,7 +77,7 @@
                       class="selectd-item no-select"
                     >
                       <el-avatar :size="25" :src="item.avatar">
-                        <img src="~@/assets/image/detault-avatar.jpg" />
+                        <img src="~@/assets/image/default-avatar.jpg" />
                       </el-avatar>
                       <p>{{ item.nickname }}</p>
                       <div

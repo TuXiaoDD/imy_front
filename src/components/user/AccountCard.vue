@@ -6,7 +6,7 @@
         <div class="user-avatar no-select">
           <img
             :src="$store.state.user.avatar"
-            :onerror="$store.state.detaultAvatar"
+            :onerror="$store.state.defaultAvatar"
           />
         </div>
         <div class="user-nickname">

@@ -9,7 +9,7 @@
         <div class="user-header">
           <div class="avatar">
             <div class="avatar-box">
-              <img :src="detail.avatar" :onerror="$store.state.detaultAvatar" />
+              <img :src="detail.avatar" :onerror="$store.state.defaultAvatar" />
             </div>
           </div>
           <div class="nickname">
@@ -149,6 +149,7 @@ export default {
   data() {
     return {
       detail: {
+        id: 0,
         mobile: '',
         nickname: '',
         avatar: '',
@@ -194,7 +195,7 @@ export default {
     // 获取用户信息
     loadUserDetail() {
       ServeSearchUser({
-        friendUid: this.uid,
+        friendUid: this.user_id,
       }).then(res => {
         if (res.code == 200) {
           this.detail.user_id = res.data.id

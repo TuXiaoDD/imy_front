@@ -42,7 +42,7 @@
                       
                       <div class="avatar">
                         <el-avatar :size="25" :src="item.avatar" shape="square">
-                          <img src="~@/assets/image/detault-avatar.jpg" />
+                          <img src="~@/assets/image/default-avatar.jpg" />
                         </el-avatar>
                       </div>
                       <div class="content"><span class="lum-text-ellipsis">{{ item.nickname }}</span></div>
@@ -93,7 +93,7 @@
                     >
                       <div class="avatar">
                         <el-avatar :size="25" :src="item.avatar" shape="square">
-                          <img src="~@/assets/image/detault-avatar.jpg" />
+                          <img src="~@/assets/image/default-avatar.jpg" />
                         </el-avatar>
                       </div>
                       <div class="content"><span class="lum-text-ellipsis">{{ item.nickname }}</span></div>
@@ -249,7 +249,7 @@ export default {
         group_avatar: '',
         group_name: this.from.groupName,
         group_profile: '',
-        uids: this.getIds().join(','),
+        uids: this.getIds(),
       }
 
       if (data.group_name == '') {
@@ -266,7 +266,7 @@ export default {
         avatar: '',
         name: this.from.groupName,
         profile: '',
-        ids: this.getIds().join(','),
+        ids: this.getIds(),
       }).then(res => {
         if (res.code == 200) {
           this.$emit('create-success', res.data)

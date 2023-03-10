@@ -12,7 +12,7 @@ let state = {
   // 个性签名
   signature: '',
   // 个性头像
-  avatar: require('@/assets/image/detault-avatar.jpg'),
+  avatar: require('@/assets/image/default-avatar.jpg'),
   // 名片背景
   visitCardBag: require('@/assets/image/default-user-banner.png'),
   // 当前登录状态

@@ -68,7 +68,7 @@
                     <img
                       v-show="item.avatar"
                       :src="item.avatar"
-                      :onerror="$store.state.detaultAvatar"
+                      :onerror="$store.state.defaultAvatar"
                     />
                   </div>
                 </el-tooltip>
@@ -126,7 +126,7 @@
                       <img
                         v-show="item.avatar"
                         :src="item.avatar"
-                        :onerror="$store.state.detaultAvatar"
+                        :onerror="$store.state.defaultAvatar"
                       />
                       <div
                         v-show="item.is_top == 0"

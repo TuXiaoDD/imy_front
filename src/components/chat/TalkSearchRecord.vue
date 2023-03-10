@@ -70,7 +70,7 @@
                 >
                   <div class="avatar">
                     <el-avatar :size="20" :src="item.avatar" shape="square">
-                      <img src="~@/assets/image/detault-avatar.jpg" />
+                      <img src="~@/assets/image/default-avatar.jpg" />
                     </el-avatar>
                   </div>
                   <div class="content" v-text="item.name"></div>

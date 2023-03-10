@@ -126,7 +126,7 @@
                         <div class="item-header">
                           <div class="avatar" @click="catUserDetail(member)">
                             <el-avatar :size="30" :src="member.avatar">
-                              <img src="~@/assets/image/detault-avatar.jpg" />
+                              <img src="~@/assets/image/default-avatar.jpg" />
                             </el-avatar>
                             <span class="nickname" v-text="member.nickname" />
                             <span class="larkc-tag" v-show="member.leader == 2">
@@ -206,7 +206,7 @@
                         </div>
                         <p class="datetime">
                           <el-avatar :size="15" :src="item.avatar">
-                            <img src="~@/assets/image/detault-avatar.jpg" />
+                            <img src="~@/assets/image/default-avatar.jpg" />
                           </el-avatar>
                           <span
                             class="text nickname"

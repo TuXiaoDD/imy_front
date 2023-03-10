@@ -47,7 +47,7 @@
               </div>
               <p class="datetime">
                 <el-avatar :size="15" :src="item.avatar">
-                  <img src="~@/assets/image/detault-avatar.jpg" />
+                  <img src="~@/assets/image/default-avatar.jpg" />
                 </el-avatar>
                 <span class="text nickname" @click="$user(item.user_id)">
                   {{ item.nickname }}
